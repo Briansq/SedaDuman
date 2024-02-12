@@ -1,0 +1,18 @@
+
+main {
+    padding-left: 135px;
+
+    > section {
+        display: none;
+        padding-right: 32px;
+        padding-left: 32px;
+
+        &:not(#home) {
+            padding-top: 64px;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+}
