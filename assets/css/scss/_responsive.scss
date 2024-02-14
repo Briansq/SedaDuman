@@ -67,6 +67,7 @@
         padding-right: 60px;
         transform: translateX(-100%);// to hide on start
         transition: all 0.4s;
+        
 
         &.open {// obviosly when open/clicked
             transform: translateX(0);
@@ -95,6 +96,10 @@
                 display: none;
             }
         }
+
+        .la-bars {
+            color: $pink;
+        }
     }
 
     h1 {
@@ -115,13 +120,14 @@
     }
 
     #home {
+
         .info {
             padding-top: 50px;
 
             
 
             .socials {
-                margin-top: 60px;
+                margin-top: 50px;
 
                 ul {
                     justify-content: space-between;
@@ -154,7 +160,7 @@
                 .item {
                     flex-direction: column;
                     text-align: center;
-                    //align-items: center;
+                    align-items: center;
 
                     i {
                         margin-right: 0;

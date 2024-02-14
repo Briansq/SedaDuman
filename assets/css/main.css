@@ -114,9 +114,9 @@ main > section.active {
 }
 #sidebar .toggle-sidebar {
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   width: 45px;
-  height: 45;
+  height: 45px;
   background: black;
   display: none;
   justify-content: center;
@@ -617,6 +617,9 @@ nav ul li > span {
   #sidebar nav ul li span {
     display: none;
   }
+  #sidebar .la-bars {
+    color: #f47ecd;
+  }
   h1 {
     font-size: 35px;
   }
@@ -634,7 +637,7 @@ nav ul li > span {
     padding-top: 50px;
   }
   #home .info .socials {
-    margin-top: 60px;
+    margin-top: 50px;
   }
   #home .info .socials ul {
     justify-content: space-between;
@@ -652,6 +655,7 @@ nav ul li > span {
   #contact .container .info .item {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
   #contact .container .info .item i {
     margin-right: 0;

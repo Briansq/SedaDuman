@@ -31,9 +31,42 @@ contactFormItems.forEach((item) => {
 
 
 //sidebar-toggle
-document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function() {
-        document.querySelector('#sidebar').classList.toggle('open')
-})
+//document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function() {
+        //document.querySelector('#sidebar').classList.toggle('open')
+
+//})
+// from another coder
+
+// Function to close the sidebar
+function closeSidebar() {
+        document.querySelector('#sidebar').classList.remove('open');
+}
+
+  // Event listener for document click
+document.addEventListener('click', function(event) {
+        const sidebar = document.querySelector('#sidebar');
+        const toggleButton = document.querySelector('#sidebar .toggle-sidebar');
+
+    // Check if the clicked element is outside the sidebar and not the toggle button
+        if (!sidebar.contains(event.target) && event.target !== toggleButton) {
+        closeSidebar();
+        }
+});
+
+  // Event listener for toggle button click
+document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function(event) {
+    // Prevent the click event from propagating to the document
+        event.stopPropagation();
+        document.querySelector('#sidebar').classList.toggle('open');
+});
+
+  // Event listener for page change (e.g., using navigation links)
+window.addEventListener('hashchange', function() {
+        closeSidebar();
+});
+
+
+
 
 
 function toggleMode() {
