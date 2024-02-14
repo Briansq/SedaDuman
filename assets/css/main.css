@@ -574,7 +574,7 @@ nav ul li > span {
   }
 }
 @media (max-width: 991px) {
-  #home .img {
+  #home .image {
     justify-content: flex-start;
     height: unset;
     margin-top: 30px;
@@ -656,6 +656,7 @@ nav ul li > span {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding-right: 110px;
   }
   #contact .container .info .item i {
     margin-right: 0;

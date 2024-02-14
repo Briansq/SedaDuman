@@ -6,6 +6,7 @@
 }
 
 @media (max-width: 800px) {// my fix can always undo after checking
+
     #about_me {
         .education-experience {
             .education-key-experience {
@@ -33,7 +34,7 @@
 
 @media (max-width: 991px) {
     #home {
-        .img {
+        .image {
             justify-content: flex-start;
             
             height: unset;
@@ -71,6 +72,7 @@
 
         &.open {// obviosly when open/clicked
             transform: translateX(0);
+            
         }
 
         .toggle-sidebar {
@@ -161,6 +163,7 @@
                     flex-direction: column;
                     text-align: center;
                     align-items: center;
+                    padding-right: 110px;
 
                     i {
                         margin-right: 0;
