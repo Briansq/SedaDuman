@@ -26,6 +26,7 @@ p {
 body {
     background: $dark_bg;
     font-family: 'Ubuntu', sans-serif;
+    transition: background 0.4s;
 }
 
 * {

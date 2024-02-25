@@ -87,7 +87,7 @@ nav {
                 }
 
                 i {
-                    font-size: 18px;
+                    font-size: 21px;
                     color: $secondarygray;
                     transition: all 0.4s;
                 }
@@ -113,7 +113,7 @@ nav {
     display: flex;
     align-items: flex-end;
     padding-bottom: 62px;
-    padding-left: 35px;//temp fix, remove later
+    //padding-left: 35px;//temp fix, remove later
 
     .outer {
         width: 24px;

@@ -70,13 +70,13 @@ window.addEventListener('hashchange', function() {
 
 
 function toggleMode() {
-    let theme = document.querySelector('html').getAttribute('theme');
+    let htmlElement = document.querySelector('html');
+    let theme = htmlElement.getAttribute('theme');
+    console.log(theme);
 
-    if(theme == "dark") {
-        theme = "light";
+    if (theme === "dark") {
+        htmlElement.setAttribute("theme", "light");
     } else {
-        theme = "dark";
+        htmlElement.setAttribute("theme", "dark");
     }
-
-    document.querySelector('html').setAttribute("theme", theme)
 }

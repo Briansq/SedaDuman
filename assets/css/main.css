@@ -45,6 +45,7 @@ p {
 body {
   background: #0a0c0a;
   font-family: "Ubuntu", sans-serif;
+  transition: background 0.4s;
 }
 
 * {
@@ -179,7 +180,7 @@ nav ul li a span {
   display: none;
 }
 nav ul li a i {
-  font-size: 18px;
+  font-size: 21px;
   color: #DAD2CD;
   transition: all 0.4s;
 }
@@ -200,7 +201,6 @@ nav ul li > span {
   display: flex;
   align-items: flex-end;
   padding-bottom: 62px;
-  padding-left: 35px;
 }
 .toggle-mode .outer {
   width: 24px;
@@ -398,7 +398,7 @@ nav ul li > span {
   content: "";
   width: 100%;
   height: 100%;
-  background: #f04fbb;
+  background: #6a6b74;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -411,7 +411,7 @@ nav ul li > span {
   content: "";
   width: 100%;
   height: 100%;
-  background: #0c0108;
+  background: black;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -591,19 +591,19 @@ nav ul li > span {
 @media (max-width: 767px) {
   #sidebar {
     background: black;
-    opacity: 0.8;
     padding-right: 60px;
     transform: translateX(-100%);
     transition: all 0.4s;
   }
   #sidebar.open {
     transform: translateX(0);
+    z-index: 2;
   }
   #sidebar .toggle-sidebar {
     display: flex;
   }
   #sidebar .logo {
-    text-align: left;
+    text-align: center;
   }
   #sidebar nav ul li a {
     display: flex;
@@ -628,6 +628,7 @@ nav ul li > span {
   }
   main {
     padding-left: 0;
+    padding-top: 50px;
   }
   > section {
     padding-right: 32px;
@@ -661,5 +662,48 @@ nav ul li > span {
   #contact .container .info .item i {
     margin-right: 0;
     margin-bottom: 8px;
+  }
+}
+html[theme=light] body {
+  background: #fff;
+}
+html[theme=light] .btn-custom-blue, html[theme=light] .btn-custom-dark {
+  color: rgb(0, 255, 255);
+  background-color: #83848e;
+}
+html[theme=light] * {
+  color: #070D0A;
+}
+html[theme=light] #sidebar .logo img {
+  filter: invert(1);
+}
+html[theme=light] #sidebar nav ul li a:hover i {
+  color: rgb(0, 255, 255);
+}
+html[theme=light] #about_me h2 {
+  color: #070D0A;
+  background-color: white;
+}
+html[theme=light] #my_work h2 {
+  color: white;
+}
+html[theme=light] #contact .info .item .text a {
+  color: #070D0A;
+}
+html[theme=light] #about_me .design-skills .items .item {
+  background: #83848e;
+}
+html[theme=light] #about_me .design-skills .items .item:after {
+  background: #b8b9bf;
+}
+@media (max-width: 800px) {
+  html[theme=light] #sidebar {
+    background: white;
+  }
+  html[theme=light] #sidebar .toggle-sidebar {
+    background: #fff;
+  }
+  html[theme=light] .la-bars {
+    color: black;
   }
 }/*# sourceMappingURL=main.css.map */
